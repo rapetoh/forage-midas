@@ -15,7 +15,7 @@ class TaskTwoTests {
     static final Logger logger = LoggerFactory.getLogger(TaskTwoTests.class);
 
     @Autowired
-    private KafkaProducer kafkaProducer;
+    private KafkaProducer  kafkaProducer;
 
     @Autowired
     private FileLoader fileLoader;
