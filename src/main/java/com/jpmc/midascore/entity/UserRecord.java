@@ -44,3 +44,5 @@ public class UserRecord {
         this.balance = balance;
     }
 }
+
+// Looks like there is already a record file ?

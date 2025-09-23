@@ -1,3 +1,8 @@
+///  The whole step 2 in this project is about the changes I made here and that I also made in the application.yml
+///
+
+
+
 package com.jpmc.midascore;
 
 import com.jpmc.midascore.foundation.Transaction;
