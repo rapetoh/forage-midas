@@ -18,6 +18,8 @@ public class TransactionRecord {
     private UserRecord recipient;
 
     private double amount;
+    private LocalDateTime timestamp = LocalDateTime.now();
+
 
     // Getter AND Setter
 
@@ -26,9 +28,6 @@ public class TransactionRecord {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public UserRecord getSender() {
         return sender;
@@ -53,4 +52,9 @@ public class TransactionRecord {
     public void setAmount(double amount) {
         this.amount = amount;
     }
+
+    public LocalDateTime getTimestamp() { return timestamp; }
+    public void setTimestamp(LocalDateTime timestamp) { this.timestamp = timestamp; }
+
+
 }

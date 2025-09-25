@@ -12,8 +12,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class TransactionListener {
 
+    @Autowired
+    private final TransactionService transactionService;
+
+
     @KafkaListener(topics = "${general.kafka-topic}", groupId = "${spring.kafka.consumer.group-id}")
     public void listen(Transaction transaction) {
-        System.out.println("Received transaction: " + transaction);
+        transactionService.processTransaction(transaction);
     }
 }
