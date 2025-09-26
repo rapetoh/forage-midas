@@ -21,7 +21,17 @@ public class TransactionRecord {
     private LocalDateTime timestamp = LocalDateTime.now();
 
 
-    // Getter AND Setter
+    @Column(nullable = false)
+    private float incentive;
+
+    public float getIncentive() {
+        return incentive;
+    }
+
+    public void setIncentive(float incentive) {
+        this.incentive = incentive;
+    }
+// Getter AND Setter
 
 
     public Long getId() {

@@ -1,7 +1,14 @@
 general:
   kafka-topic: midas-transactions
 
+server:
+  port: 33400
+
+
 spring:
+  h2:
+    console:
+      enabled: true
   kafka:
     consumer:
       group-id: midas-core-group
